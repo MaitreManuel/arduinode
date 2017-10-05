@@ -2,3 +2,15 @@ body {
     background: black;
     margin: 0;
 }
+.toolbox {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: Arial;
+    line-height: 1.6;
+    min-width: 55px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}

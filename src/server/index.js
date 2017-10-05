@@ -5,10 +5,13 @@ const port = new SerialPort('/dev/ttyACM0', { baudRate: 9600 });
 const parser = new Readline();
 
 port.on('open', () => {
-    console.log("C'est l'heure de manger!!!");
-    setTimeout(() => {
-        port.write('1');
-    }, 2000);
+    console.log('PROJEEEEEEEEEEEET');
+});
+
+port.on('connection', (socket) => {
+    socket.on('echo', () => {
+        console.log('echooooo');
+    });
 });
 
 port.pipe(parser);

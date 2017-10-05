@@ -15,9 +15,6 @@ void loop() {
   if(v > 0) {
     digitalWrite(MA_LED_ROUGE, LOW);
     digitalWrite(MA_LED, HIGH);
-    delay(v);
-    digitalWrite(MA_LED, LOW);
-    delay(v);
   } else {
     digitalWrite(MA_LED_ROUGE, HIGH);
     digitalWrite(MA_LED, LOW);
