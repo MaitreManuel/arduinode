@@ -1,0 +1,36 @@
+{
+  "name": "arduinode",
+  "version": "1.0.0",
+  "description": "C'est dla 3D",
+  "main": "index.js",
+  "scripts": {
+    "server": "node src/server/index.js", 
+    "build": "NODE_ENV=production webpack",
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaitreManuel/threejs.git"
+  },
+  "author": "Trystan Eveno <trystan.eveno@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaitreManuel/threejs/issues"
+  },
+  "homepage": "https://github.com/MaitreManuel/threejs#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "serialport": "^5.0.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
+  }
+}
